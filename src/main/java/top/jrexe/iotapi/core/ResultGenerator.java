@@ -1,4 +1,4 @@
-package com.company.project.core;
+package top.jrexe.iotapi.core;
 
 /**
  * 响应结果生成工具

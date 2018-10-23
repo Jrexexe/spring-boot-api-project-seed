@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.jrexe.iotapi.dao.DeviceInfoMapper">
+  <resultMap id="BaseResultMap" type="top.jrexe.iotapi.model.DeviceInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="chip_id" jdbcType="VARCHAR" property="chipId" />
+    <result column="chip_type" jdbcType="VARCHAR" property="chipType" />
+    <result column="last_online" jdbcType="DATE" property="lastOnline" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="version" jdbcType="VARCHAR" property="version" />
+    <result column="create_time" jdbcType="DATE" property="createTime" />
+  </resultMap>
+</mapper>

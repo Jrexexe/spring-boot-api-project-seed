@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.jrexe.iotapi.dao.SensorDataMapper">
+  <resultMap id="BaseResultMap" type="top.jrexe.iotapi.model.SensorData">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="from_chip_id" jdbcType="VARCHAR" property="fromChipId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="sensor_data" jdbcType="VARCHAR" property="sensorData" />
+    <result column="sensor_type" jdbcType="VARCHAR" property="sensorType" />
+    <result column="upload_time" jdbcType="TIMESTAMP" property="uploadTime" />
+    <result column="from_sensor_id" jdbcType="VARCHAR" property="fromSensorId" />
+  </resultMap>
+</mapper>

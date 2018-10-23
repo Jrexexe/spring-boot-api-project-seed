@@ -1,4 +1,4 @@
-package com.company.project.core;
+package top.jrexe.iotapi.core;
 
 import com.alibaba.fastjson.JSON;
 

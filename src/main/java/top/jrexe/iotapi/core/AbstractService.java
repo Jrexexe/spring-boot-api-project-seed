@@ -1,4 +1,4 @@
-package com.company.project.core;
+package top.jrexe.iotapi.core;
 
 
 import org.apache.ibatis.exceptions.TooManyResultsException;
