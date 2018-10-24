@@ -14,7 +14,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
-* Created by CodeGenerator on 2018/10/23.
+* Created by Jrexe on 2018/10/24.
 */
 @RestController
 @RequestMapping("/sensor/data")
@@ -52,5 +52,9 @@ public class SensorDataController {
         List<SensorData> list = sensorDataService.findAll();
         PageInfo pageInfo = new PageInfo(list);
         return ResultGenerator.genSuccessResult(pageInfo);
+    }
+    @PostMapping("/history")
+    public Result history(){
+        return ResultGenerator.genSuccessResult();
     }
 }

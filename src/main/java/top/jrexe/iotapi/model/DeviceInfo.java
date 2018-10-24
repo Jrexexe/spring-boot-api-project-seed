@@ -15,15 +15,15 @@ public class DeviceInfo {
     @Column(name = "chip_type")
     private String chipType;
 
+    @Column(name = "create_time")
+    private Date createTime;
+
     @Column(name = "last_online")
     private Date lastOnline;
 
     private String name;
 
     private String version;
-
-    @Column(name = "create_time")
-    private Date createTime;
 
     /**
      * @return id
@@ -68,6 +68,20 @@ public class DeviceInfo {
     }
 
     /**
+     * @return create_time
+     */
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    /**
+     * @param createTime
+     */
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    /**
      * @return last_online
      */
     public Date getLastOnline() {
@@ -107,19 +121,5 @@ public class DeviceInfo {
      */
     public void setVersion(String version) {
         this.version = version;
-    }
-
-    /**
-     * @return create_time
-     */
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    /**
-     * @param createTime
-     */
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
     }
 }

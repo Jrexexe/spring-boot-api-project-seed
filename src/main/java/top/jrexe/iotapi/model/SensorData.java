@@ -9,11 +9,11 @@ public class SensorData {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "from_chip_id")
-    private String fromChipId;
-
     @Column(name = "create_time")
     private Date createTime;
+
+    @Column(name = "from_chip_id")
+    private String fromChipId;
 
     @Column(name = "sensor_data")
     private String sensorData;
@@ -24,8 +24,8 @@ public class SensorData {
     @Column(name = "upload_time")
     private Date uploadTime;
 
-    @Column(name = "from_sensor_id")
-    private String fromSensorId;
+    @Column(name = "sensor_id")
+    private Integer sensorId;
 
     /**
      * @return id
@@ -42,20 +42,6 @@ public class SensorData {
     }
 
     /**
-     * @return from_chip_id
-     */
-    public String getFromChipId() {
-        return fromChipId;
-    }
-
-    /**
-     * @param fromChipId
-     */
-    public void setFromChipId(String fromChipId) {
-        this.fromChipId = fromChipId;
-    }
-
-    /**
      * @return create_time
      */
     public Date getCreateTime() {
@@ -67,6 +53,20 @@ public class SensorData {
      */
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
+    }
+
+    /**
+     * @return from_chip_id
+     */
+    public String getFromChipId() {
+        return fromChipId;
+    }
+
+    /**
+     * @param fromChipId
+     */
+    public void setFromChipId(String fromChipId) {
+        this.fromChipId = fromChipId;
     }
 
     /**
@@ -112,16 +112,16 @@ public class SensorData {
     }
 
     /**
-     * @return from_sensor_id
+     * @return sensor_id
      */
-    public String getFromSensorId() {
-        return fromSensorId;
+    public Integer getSensorId() {
+        return sensorId;
     }
 
     /**
-     * @param fromSensorId
+     * @param sensorId
      */
-    public void setFromSensorId(String fromSensorId) {
-        this.fromSensorId = fromSensorId;
+    public void setSensorId(Integer sensorId) {
+        this.sensorId = sensorId;
     }
 }

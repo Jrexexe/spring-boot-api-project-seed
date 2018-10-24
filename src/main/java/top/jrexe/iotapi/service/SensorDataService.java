@@ -4,7 +4,7 @@ import top.jrexe.iotapi.core.Service;
 
 
 /**
- * Created by CodeGenerator on 2018/10/23.
+ * Created by Jrexe on 2018/10/24.
  */
 public interface SensorDataService extends Service<SensorData> {
 
